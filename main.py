@@ -18,7 +18,7 @@ class NotesApp:
         note = {"title": title, "content": content}
         self.notes.append(note)
         self.save_notes()
-        print(f"Заметка '{title}' успешно создана.")
+        print(f"Заметка '{title}' Заметка успешно создана.")
 
     def list_notes(self):
         if not self.notes:
@@ -39,7 +39,7 @@ class NotesApp:
         if 0 <= index < len(self.notes):
             deleted_note = self.notes.pop(index)
             self.save_notes()
-            print(f"Заметка '{deleted_note['title']}' успешно удалена.")
+            print(f"Заметка '{deleted_note['title']}' Заметка успешно удалена.")
 
 if __name__ == "__main__":
     app = NotesApp()
@@ -78,4 +78,4 @@ if __name__ == "__main__":
         elif choice == "5":
             break
         else:
-            print("Неверный выбор. Попробуйте снов")
+            print("Неверный выбор. Попробуйте снова")
